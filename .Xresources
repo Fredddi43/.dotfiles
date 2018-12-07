@@ -1,0 +1,57 @@
+#define FONT SauceCodeProNerdFont
+#define SIZE 12
+
+! special
+*.foreground:   #c0c5ce
+*.background:   #2b303b
+*.cursorColor:  #c0c5ce
+
+! black
+*.color0:       #2b303b
+*.color8:       #65737e
+
+! red
+*.color1:       #bf616a
+*.color9:       #bf616a
+
+! green
+*.color2:       #a3be8c
+*.color10:      #a3be8c
+
+! yellow
+*.color3:       #ebcb8b
+*.color11:      #ebcb8b
+
+! blue
+*.color4:       #8fa1b3
+*.color12:      #8fa1b3
+
+! magenta
+*.color5:       #b48ead
+*.color13:      #b48ead
+
+! cyan
+*.color6:       #96b5b4
+*.color14:      #96b5b4
+
+! white
+*.color7:       #c0c5ce
+*.color15:      #eff1f5
+
+! urvxt setup
+URxvt*perl-ext-common:  resize-font,selection-to-clipboard,matcher
+URxvt*font:             xft:FONT:pixelsize=SIZE:style=Regular:antialias=true, \
+                        xft:Inconsolata:pixelsize=SIZE:style=Regular:antiaalias=true
+URxvt*boldFont:         xft:FONT:pixelsize=SIZE:style=Bold:antialias=true, \
+                        xft:Inconsolata:pixelsize=SIZE:style=Bold:antiaalias=true
+URxvt*url-launcher:     /usr/bin/waterfox
+!URxvt*urlLauncher:     /usr/bin/firefox
+URxvt*scrollBar:        false
+!URxvt*scrollBar_right:  true
+URxvt.iso14755:         False
+URxvt*dynamicColors:    on
+URxvt.internalBorder:   10
+URxvt.underlineURLs:    true
+URxvt.matcher.button:   1
+URxvt.copyCommand:      xclip -i -selection clipboard
+URxvt.pasteCommand:	xclip -o -selection clipboard
